@@ -11,6 +11,8 @@ import java.io.Serializable;
  */
 public class Message implements Serializable {
 
+    private final static long serialVersionUID = 0L;
+
     @JsonProperty("message_id")
     private int messageId;
     @Nullable
@@ -18,10 +20,49 @@ public class Message implements Serializable {
     private User fromUser;
     @JsonProperty("date")
     private int date;
-    @NotNull
     @JsonProperty("chat")
     private Chat chat;
+    @Nullable
+    @JsonProperty("forward_date")
+    private Integer forwardDate;
+    @Nullable
+    @JsonProperty("reply_to_message")
+    private Message replyToMessage;
+    @Nullable
+    @JsonProperty("text")
+    private String text;
 
+    public int getMessageId() {
+        return messageId;
+    }
 
+    @Nullable
+    public User getFromUser() {
+        return fromUser;
+    }
+
+    public int getDate() {
+        return date;
+    }
+
+    @NotNull
+    public Chat getChat() {
+        return chat;
+    }
+
+    @Nullable
+    public Integer getForwardDate() {
+        return forwardDate;
+    }
+
+    @Nullable
+    public Message getReplyToMessage() {
+        return replyToMessage;
+    }
+
+    @Nullable
+    public String getText() {
+        return text;
+    }
 
 }

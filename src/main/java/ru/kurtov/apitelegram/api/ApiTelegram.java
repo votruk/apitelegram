@@ -4,14 +4,11 @@ import org.jetbrains.annotations.NotNull;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.jackson.JacksonConverterFactory;
-import ru.kurtov.apitelegram.TelegramException;
-import ru.kurtov.apitelegram.models.TelegramResponse;
-import ru.kurtov.apitelegram.models.Update;
-import ru.kurtov.apitelegram.models.User;
+import ru.kurtov.apitelegram.models.*;
+import ru.kurtov.apitelegram.requestbodies.SendMessageBody;
 import rx.Observable;
-import rx.functions.Func1;
 import rx.schedulers.Schedulers;
-import sun.rmi.runtime.Log;
+import rx.subjects.PublishSubject;
 
 import java.util.concurrent.TimeUnit;
 
@@ -21,14 +18,20 @@ import java.util.concurrent.TimeUnit;
 public class ApiTelegram {
 
     private static final String BASE_URL = "https://api.telegram.org/bot";
-    private static final long DELAY = TimeUnit.MILLISECONDS.toMillis(1000);
+    private static final long DELAY = TimeUnit.MILLISECONDS.toMillis(100);
+    private PublishSubject<Message> messagesSubject = PublishSubject.create();
+    private PublishSubject<InlineQuery> inlineQueriesSubject = PublishSubject.create();
+    private PublishSubject<ChosenInlineResult> chosenInlineResultsSubject = PublishSubject.create();
+    private PublishSubject<CallbackQuery> callbackQueriesSubject = PublishSubject.create();
+    private int lastUpdatedId;
 
-    private boolean isOpened;
+    private boolean isOpened = true;
 
     @NotNull
     private final TelegramApiMethods telegramApiMethods;
 
     public ApiTelegram(@NotNull final String token) {
+
         final Retrofit mainEndpoint = new Retrofit.Builder()
                 .baseUrl(BASE_URL + token + "/")
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.createWithScheduler(Schedulers.io()))
@@ -36,39 +39,85 @@ public class ApiTelegram {
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
         telegramApiMethods = mainEndpoint.create(TelegramApiMethods.class);
+        final Thread readerThread = new ReaderThread();
+        readerThread.setName("Telegram Connection");
+        readerThread.start();
     }
 
     public void setOpened(boolean opened) {
         isOpened = opened;
     }
 
-    public Observable<Update> getUpdates() {
-        return telegramApiMethods.getUpdate()
-                .repeatWhen(observable -> Observable.timer(DELAY, TimeUnit.MILLISECONDS))
-                .retryWhen(attempts -> attempts.switchMap(throwable -> {
-//                    if (throwable instanceof TelegramException) {
-                        return Observable.timer(DELAY, TimeUnit.MILLISECONDS);
-//                    }
-
-                }))
-                .switchMap(Observable::just)
+    @NotNull
+    public Observable<Message> sendMessage(@NotNull final SendMessageBody sendMessageBody) {
+        return telegramApiMethods.sendMessage(sendMessageBody)
                 .map(TelegramResponse::getResult);
+    }
+
+    @NotNull
+    public Observable<Message> observeMessages() {
+        return messagesSubject;
+    }
+
+    @NotNull
+    public Observable<InlineQuery> observeInlineQueries() {
+        return inlineQueriesSubject;
+    }
+
+    @NotNull
+    public Observable<ChosenInlineResult> observeChosenInlineResults() {
+        return chosenInlineResultsSubject;
+    }
+
+    @NotNull
+    public Observable<CallbackQuery> observeCallbackQueries() {
+        return callbackQueriesSubject;
+    }
+
+    private class ReaderThread extends Thread {
+
+        @Override
+        public void run() {
+            super.run();
+            setPriority(MIN_PRIORITY);
+            while (isOpened) {
+                try {
+                    Thread.sleep(DELAY);
+                    telegramApiMethods.getUpdates(lastUpdatedId + 1).map(TelegramResponse::getResult)
+                            .subscribe(updates -> {
+                                lastUpdatedId = 0;
+                                for (final Update update : updates) {
+                                    updateSubject(update);
+                                    if (update.getUpdateId() > lastUpdatedId) {
+                                        lastUpdatedId = update.getUpdateId();
+                                    }
+                                }
+                            });
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }
 
     }
 
-    public Observable<User> getMe() {
-        return telegramApiMethods.getMe()
-//                .repeatWhen(observable -> Observable.timer(DELAY, TimeUnit.MILLISECONDS))
-//                .retryWhen(attempts -> attempts.switchMap(throwable -> {
-////                    if (throwable instanceof TelegramException) {
-//                    return Observable.timer(DELAY, TimeUnit.MILLISECONDS);
-////                    }
-//
-//                }))
-                .switchMap(Observable::just)
-                .map(TelegramResponse::getResult);
-
+    private void updateSubject(Update update) {
+        switch (update.getUpdateType()) {
+            case INLINE_QUERY:
+                inlineQueriesSubject.onNext(update.getInlineQuery());
+                break;
+            case CHOSEN_INLINE_RESULT:
+                chosenInlineResultsSubject.onNext(update.getChosenInlineResult());
+                break;
+            case CALLBACK_QUERY:
+                callbackQueriesSubject.onNext(update.getCallbackQuery());
+                break;
+            case MESSAGE:
+            default:
+                messagesSubject.onNext(update.getMessage());
+                break;
+        }
     }
-
 
 }

@@ -5,11 +5,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.jetbrains.annotations.Nullable;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by KURT on 24.04.2016.
  */
-public abstract class TelegramResponse<TObject extends Serializable> {
+public class TelegramResponse<TObject extends Serializable> {
 
     @JsonProperty("ok")
     private boolean ok;
@@ -18,8 +19,8 @@ public abstract class TelegramResponse<TObject extends Serializable> {
     private String description;
     @JsonProperty("error_code")
     private int errorCode;
-    @Nullable
     @JsonProperty("result")
+    @Nullable
     private TObject result;
 
     @Nullable
