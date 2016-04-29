@@ -1,5 +1,7 @@
 package ru.kurtov.apitelegram.api;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.jetbrains.annotations.NotNull;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
@@ -18,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 public class ApiTelegram {
 
     private static final String BASE_URL = "https://api.telegram.org/bot";
-    private static final long DELAY = TimeUnit.MILLISECONDS.toMillis(100);
+    private static final long DELAY = TimeUnit.MILLISECONDS.toMillis(1000);
     private PublishSubject<Message> messagesSubject = PublishSubject.create();
     private PublishSubject<InlineQuery> inlineQueriesSubject = PublishSubject.create();
     private PublishSubject<ChosenInlineResult> chosenInlineResultsSubject = PublishSubject.create();
@@ -31,17 +33,17 @@ public class ApiTelegram {
     private final TelegramApiMethods telegramApiMethods;
 
     public ApiTelegram(@NotNull final String token) {
-
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         final Retrofit mainEndpoint = new Retrofit.Builder()
                 .baseUrl(BASE_URL + token + "/")
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.createWithScheduler(Schedulers.io()))
                 .client(ApiUtils.createDefaultClientBuilder().build())
-                .addConverterFactory(JacksonConverterFactory.create())
+                .addConverterFactory(JacksonConverterFactory.create(mapper))
                 .build();
         telegramApiMethods = mainEndpoint.create(TelegramApiMethods.class);
-        final Thread readerThread = new ReaderThread();
-        readerThread.setName("Telegram Connection");
-        readerThread.start();
+        final Thread thread = new Thread(new ReaderThread());
+        thread.start();
     }
 
     public void setOpened(boolean opened) {
@@ -74,16 +76,15 @@ public class ApiTelegram {
         return callbackQueriesSubject;
     }
 
-    private class ReaderThread extends Thread {
+    private class ReaderThread implements Runnable {
 
         @Override
         public void run() {
-            super.run();
-            setPriority(MIN_PRIORITY);
             while (isOpened) {
                 try {
                     Thread.sleep(DELAY);
-                    telegramApiMethods.getUpdates(lastUpdatedId + 1).map(TelegramResponse::getResult)
+                    telegramApiMethods.getUpdates(lastUpdatedId + 1)
+                            .map(TelegramResponse::getResult)
                             .subscribe(updates -> {
                                 lastUpdatedId = 0;
                                 for (final Update update : updates) {
@@ -96,10 +97,9 @@ public class ApiTelegram {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-
             }
-        }
 
+        }
     }
 
     private void updateSubject(Update update) {
