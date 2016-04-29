@@ -6,26 +6,25 @@ import org.jetbrains.annotations.Nullable;
 import java.io.Serializable;
 
 /**
- * Created by KURT on 28.04.2016.
+ * Created by KURT on 30.04.2016.
  */
-public class ReplyKeyboardHide implements ReplyMarkup, Serializable {
+public class ForceReply implements ReplyMarkup, Serializable {
 
     private final static long serialVersionUID = 0L;
 
-    @JsonProperty("hide_keyboard")
-    private final boolean hideKeyboard = true;
+    @JsonProperty("force_reply")
+    private final boolean forceReply = true;
     @JsonProperty("selective")
-    private final Boolean selective;
+    private Boolean selective;
 
-    public ReplyKeyboardHide(boolean selective) {
+    public ForceReply(@Nullable final Boolean selective) {
         this.selective = selective;
     }
 
-    public boolean isHideKeyboard() {
-        return hideKeyboard;
+    public boolean isForceReply() {
+        return forceReply;
     }
 
-    @Nullable
     public Boolean getSelective() {
         return selective;
     }
