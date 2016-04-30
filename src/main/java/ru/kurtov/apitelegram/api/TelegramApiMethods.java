@@ -5,11 +5,11 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
-import ru.kurtov.apitelegram.models.Message;
-import ru.kurtov.apitelegram.models.TelegramResponse;
-import ru.kurtov.apitelegram.models.Update;
-import ru.kurtov.apitelegram.models.User;
-import ru.kurtov.apitelegram.requestbodies.SendMessageBody;
+import ru.kurtov.apitelegram.api.models.Message;
+import ru.kurtov.apitelegram.api.models.TelegramResponse;
+import ru.kurtov.apitelegram.api.models.Update;
+import ru.kurtov.apitelegram.api.models.User;
+import ru.kurtov.apitelegram.api.requestbodies.SendMessageBody;
 import rx.Observable;
 
 import java.util.ArrayList;
@@ -27,5 +27,9 @@ public interface TelegramApiMethods {
 
     @POST("sendmessage")
     Observable<TelegramResponse<Message>> sendMessage(@NotNull @Body final SendMessageBody sendMessageBody);
+
+    @POST("forwardmessage")
+    Observable<TelegramResponse<Message>> forwardMessage(@NotNull @Body final SendMessageBody sendMessageBody);
+
 
 }

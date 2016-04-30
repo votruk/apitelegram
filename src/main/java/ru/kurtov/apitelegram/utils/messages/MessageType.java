@@ -1,0 +1,31 @@
+package ru.kurtov.apitelegram.utils.messages;
+
+/**
+ * Created by KURT on 01.05.2016.
+ */
+public enum MessageType {
+
+    TEXT,
+    AUDIO,
+    DOCUMENT,
+    PHOTO,
+    STICKER,
+    VIDEO,
+    VOICE,
+    CONTACT,
+    LOCATION,
+    VENUE,
+    CHAT_NEW_MEMBER,
+    CHAT_LEFT_MEMBER,
+    CHAT_NEW_TITLE,
+    CHAT_NEW_PHOTO,
+    SERVICE_CHAT_DELETE_PHOTO,
+    SERVICE_CHAT_GROUP_CREATED,
+    SERVICE_CHAT_SUPERGROUP_CREATED,
+    SERVICE_CHAT_CHANNEL_CREATED,
+    MIGRATE_TO_CHAT,
+    MIGRATE_FROM_CHAT,
+    PINNED_MESSAGE,
+    UNKNOWN_TYPE
+
+}
