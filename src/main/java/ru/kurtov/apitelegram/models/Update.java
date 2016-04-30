@@ -2,6 +2,7 @@ package ru.kurtov.apitelegram.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.jetbrains.annotations.Nullable;
+import ru.kurtov.apitelegram.models.enums.UpdateType;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package ru.kurtov.apitelegram.models;
+package ru.kurtov.apitelegram.models.enums;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -14,6 +14,6 @@ public enum ChatType {
     @JsonProperty("supergroup")
     SUPERGROUP,
     @JsonProperty("channel")
-    CHANNEL;
+    CHANNEL
 
 }

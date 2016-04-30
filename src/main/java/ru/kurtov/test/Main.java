@@ -2,7 +2,6 @@ package ru.kurtov.test;
 
 import ru.kurtov.apitelegram.api.ApiTelegram;
 import ru.kurtov.apitelegram.models.keyboard.KeyboardButton;
-import ru.kurtov.apitelegram.models.keyboard.ReplyKeyboardHide;
 import ru.kurtov.apitelegram.models.keyboard.ReplyKeyboardMarkup;
 import ru.kurtov.apitelegram.requestbodies.SendMessageBody;
 
@@ -14,7 +13,7 @@ import java.util.List;
  */
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         final ApiTelegram apiTelegram = new ApiTelegram("183925292:AAHrPi7BHHVCK6vuvc8k7qbAIYfdAiaLnjI");
         apiTelegram.observeMessages()

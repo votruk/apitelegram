@@ -1,4 +1,4 @@
-package ru.kurtov.apitelegram.models;
+package ru.kurtov.apitelegram.models.enums;
 
 /**
  * Created by KURT on 27.04.2016.
