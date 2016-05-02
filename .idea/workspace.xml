@@ -2,84 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f903f03d-c0ce-4063-8ff1-78ac705333ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/ShouldNotHappenedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/ForwardMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/AudioMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/BaseMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/MessageType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/SimpleMessageEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/TextMessage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/TextMessageUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/VideoMessage.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/CallbackQuery.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/Chat.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/ChatType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/ChosenInlineResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/InlineQuery.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/Location.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/Message.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/TelegramResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/Update.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/UpdateType.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/keyboard/ForceReply.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/keyboard/InlineKeyboardButton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/keyboard/InlineKeyboardMarkup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/keyboard/KeyboardButton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/keyboard/ReplyKeyboardHide.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/keyboard/ReplyKeyboardMarkup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/models/keyboard/ReplyMarkup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/requestbodies/SendMessageBody.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/requestbodies/enums/ParseMode.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/api/ApiTelegram$1.class" afterPath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/api/ApiTelegram$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/api/ApiTelegram$ReaderThread.class" afterPath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/api/ApiTelegram$ReaderThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/api/ApiTelegram.class" afterPath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/api/ApiTelegram.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/api/TelegramApiMethods.class" afterPath="$PROJECT_DIR$/target/classes/ru/kurtov/apitelegram/api/TelegramApiMethods.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/ForwardMessageBody.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/base/BaseBodyWithChatId.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ru/kurtov/test/Main.class" afterPath="$PROJECT_DIR$/target/classes/ru/kurtov/test/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/ApiTelegram.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/ApiTelegram.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/TelegramApiMethods.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/TelegramApiMethods.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/test/Main.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/test/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/CallbackQuery.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/CallbackQuery.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/Chat.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/Chat.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/ChosenInlineResult.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/ChosenInlineResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/Contact.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/Contact.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/InlineQuery.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/InlineQuery.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/Location.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/Location.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/Message.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/Message.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/MessageEntity.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/MessageEntity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/TelegramResponse.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/TelegramResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/Update.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/Update.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/User.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/UserProfilePhotos.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/UserProfilePhotos.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/Venue.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/Venue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/enums/ChatType.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/enums/ChatType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/enums/MessageEntityType.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/enums/MessageEntityType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/enums/UpdateType.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/enums/UpdateType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/files/Audio.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/files/Audio.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/files/Document.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/files/Document.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/files/FileWithId.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/files/FileWithId.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/files/FileWithIdAndMimeType.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/files/FileWithIdAndMimeType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/files/FileWithIdAndSize.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/files/FileWithIdAndSize.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/files/PhotoSize.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/files/PhotoSize.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/files/Sticker.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/files/Sticker.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/files/Video.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/files/Video.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/files/Voice.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/files/Voice.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/ForceReply.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/keyboard/ForceReply.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/InlineKeyboardButton.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/keyboard/InlineKeyboardButton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/InlineKeyboardMarkup.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/keyboard/InlineKeyboardMarkup.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/KeyboardButton.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/keyboard/KeyboardButton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/ReplyKeyboardHide.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/keyboard/ReplyKeyboardHide.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/ReplyKeyboardMarkup.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/keyboard/ReplyKeyboardMarkup.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/ReplyMarkup.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/keyboard/ReplyMarkup.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/requestbodies/SendMessageBody.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/SendMessageBody.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/requestbodies/enums/ParseMode.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/models/enums/ParseMode.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/ForwardMessage.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/send/SendPhotoBodyWithChatId.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/SendMessageBody.java" afterPath="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/send/SendMessageBodyWithChatId.java" />
     </list>
     <ignored path="apitelegram.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored mask=".iml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,8 +37,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/test/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+            <state relative-caret-position="340">
+              <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,14 +46,88 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ForwardMessageBody.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/ForwardMessageBody.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseBodyWithChatId.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/base/BaseBodyWithChatId.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendMessageBodyWithChatId.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/send/SendMessageBodyWithChatId.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1366#1367#0" expanded="true" />
+                <element signature="e#1416#1417#0" expanded="true" />
+                <element signature="e#1936#1937#0" expanded="true" />
+                <element signature="e#1970#1971#0" expanded="true" />
+                <element signature="e#2039#2040#0" expanded="true" />
+                <element signature="e#2081#2082#0" expanded="true" />
+                <element signature="e#2172#2173#0" expanded="true" />
+                <element signature="e#2238#2239#0" expanded="true" />
+                <element signature="e#2325#2326#0" expanded="true" />
+                <element signature="e#2387#2388#0" expanded="true" />
+                <element signature="e#2468#2469#0" expanded="true" />
+                <element signature="e#2524#2525#0" expanded="true" />
+                <element signature="e#2599#2600#0" expanded="true" />
+                <element signature="e#2645#2646#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendPhotoBodyWithChatId.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/send/SendPhotoBodyWithChatId.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1099#1100#0" expanded="true" />
+                <element signature="e#1411#1412#0" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/TextMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ApiTelegram.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/ApiTelegram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+            <state relative-caret-position="204">
+              <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
               <folding>
-                <element signature="e#2385#2386#0" expanded="true" />
-                <element signature="e#2423#2424#0" expanded="true" />
+                <element signature="e#2410#2411#0" expanded="true" />
+                <element signature="e#2448#2449#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,27 +150,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleMessageEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/SimpleMessageEntity.java">
+      <file leaf-file-name="BaseMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/BaseMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShouldNotHappenedException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/ShouldNotHappenedException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -187,20 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/CallbackQuery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/Update.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/requestbodies/enums/ParseMode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/TelegramResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/ReplyKeyboard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/requestbodies/SendMessageBody.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/InlineKeyboardMarkup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/KeyboardButton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/InlineKeyboardButton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/ReplyKeyboardMarkup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/ReplyKeyboardHide.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/keyboard/ForceReply.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/enums/UpdateType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/enums/ChatType.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/enums/MessageEntityType.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/MessageEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/models/ModelWithId.java" />
@@ -238,6 +219,20 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/ShouldNotHappendException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/ShouldNotHappenedException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/test/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/SendPhoto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/BaseBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/ForwardMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/SendMessageBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/SendPhotoBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/ForwardMessageBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/send/SendPhotoBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/send/SendMessageBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/base/BaseBodyWithReplyMarkup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/base/BaseBody.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/base/BaseBodyWithChatId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/base/BaseBodyWithChatIdWithReplyMarkup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/send/SendMessageBodyWithChatId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/send/SendPhotoBodyWithChatId.java" />
       </list>
     </option>
   </component>
@@ -401,6 +396,254 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kurtov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kurtov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kurtov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kurtov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="requestbodies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kurtov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="requestbodies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="send" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kurtov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apitelegram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="requestbodies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -417,14 +660,14 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/redist/annotations-java8.jar!/" />
-    <property name="SearchEverywhereHistoryKey" value="Sh&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/ShouldNotHappendException.java&#10;Messa&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/models/Message.java&#10;onSubscribe&#9;PSI&#9;JAVA://rx.internal.operators.BufferUntilSubscriber.OnSubscribeAction&#10;Api&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/api/TelegramApiMethods.java&#10;Mess&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/models/Message.java&#10;Main&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/test/Main.java&#10;Upda&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/models/Update.java" />
+    <property name="SearchEverywhereHistoryKey" value="TextMessa&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/utils/messages/TextMessage.java&#10;Sh&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/ShouldNotHappendException.java&#10;Messa&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/models/Message.java&#10;onSubscribe&#9;PSI&#9;JAVA://rx.internal.operators.BufferUntilSubscriber.OnSubscribeAction&#10;Api&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/api/TelegramApiMethods.java&#10;Mess&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/models/Message.java&#10;Main&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/test/Main.java&#10;Upda&#9;FILE&#9;file://D:/JavaProjects/apitelegram/src/main/java/ru/kurtov/apitelegram/models/Update.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -707,7 +950,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -716,12 +959,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35634744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35634744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24093817" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722815" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3129176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -732,7 +976,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3129176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -746,12 +989,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35714287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35634744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24111111" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722815" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3129176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -777,7 +1020,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/kurtov/test/Main.java</url>
-          <line>17</line>
+          <line>19</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -787,8 +1030,14 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/kurtov/test/Main.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -797,27 +1046,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.ideaLibSources/rxjava-1.1.1-sources.jar!/rx/observables/BlockingObservable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/rxjava-1.1.1-sources.jar!/rx/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="9377" column="54" selection-start-line="9377" selection-start-column="54" selection-end-line="9377" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/rxjava-1.1.1-sources.jar!/rx/schedulers/Schedulers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="106" column="96" selection-start-line="106" selection-start-column="96" selection-end-line="106" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.7.2/jackson-databind-2.7.2.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -892,6 +1120,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#948#949#0" expanded="false" />
+            <element signature="e#975#976#0" expanded="false" />
+            <element signature="e#1031#1032#0" expanded="false" />
+            <element signature="e#1068#1069#0" expanded="false" />
+            <element signature="e#1125#1126#0" expanded="false" />
+            <element signature="e#1163#1164#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,6 +1280,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,21 +1288,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/SendMessageBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/ForwardMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1114,29 +1337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/BaseMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="e#1408#1409#0" expanded="false" />
-            <element signature="e#1440#1441#0" expanded="false" />
-            <element signature="e#1468#1469#0" expanded="false" />
-            <element signature="e#1495#1496#0" expanded="false" />
-            <element signature="e#1537#1538#0" expanded="false" />
-            <element signature="e#1564#1565#0" expanded="false" />
-            <element signature="e#1607#1608#0" expanded="false" />
-            <element signature="e#1634#1635#0" expanded="false" />
-            <element signature="e#1684#1685#0" expanded="false" />
-            <element signature="e#1718#1719#0" expanded="false" />
-            <element signature="e#1771#1772#0" expanded="false" />
-            <element signature="e#1805#1806#0" expanded="false" />
-            <element signature="e#1861#1862#0" expanded="false" />
-            <element signature="e#1898#1899#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/MessageType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1157,17 +1357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/ApiTelegram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
-          <folding>
-            <element signature="e#2385#2386#0" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/VideoMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -1181,26 +1370,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/TextMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
-          <folding>
-            <element signature="e#1382#1383#0" expanded="false" />
-            <element signature="e#1409#1410#0" expanded="false" />
-            <element signature="e#1471#1472#0" expanded="false" />
-            <element signature="e#1502#1503#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/TextMessageUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/SimpleMessageEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/ShouldNotHappenedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/BaseMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,32 +1425,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/ShouldNotHappenedException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/TextMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="612">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/utils/messages/SimpleMessageEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/base/BaseBodyWithChatIdWithReplyMarkup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+        <state relative-caret-position="408">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/base/BaseBodyWithChatId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/ApiTelegram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
+          <folding>
+            <element signature="e#2410#2411#0" expanded="true" />
+            <element signature="e#2448#2449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/ForwardMessageBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/send/SendMessageBodyWithChatId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1416#1417#0" expanded="true" />
+            <element signature="e#1936#1937#0" expanded="true" />
+            <element signature="e#1970#1971#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2081#2082#0" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
+            <element signature="e#2238#2239#0" expanded="true" />
+            <element signature="e#2325#2326#0" expanded="true" />
+            <element signature="e#2387#2388#0" expanded="true" />
+            <element signature="e#2468#2469#0" expanded="true" />
+            <element signature="e#2524#2525#0" expanded="true" />
+            <element signature="e#2599#2600#0" expanded="true" />
+            <element signature="e#2645#2646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/apitelegram/api/requestbodies/send/SendPhotoBodyWithChatId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/kurtov/test/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="340">
+          <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

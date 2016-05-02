@@ -9,7 +9,7 @@ import ru.kurtov.apitelegram.api.models.Message;
 import ru.kurtov.apitelegram.api.models.TelegramResponse;
 import ru.kurtov.apitelegram.api.models.Update;
 import ru.kurtov.apitelegram.api.models.User;
-import ru.kurtov.apitelegram.api.requestbodies.SendMessageBody;
+import ru.kurtov.apitelegram.api.requestbodies.send.SendMessageBodyWithChatId;
 import rx.Observable;
 
 import java.util.ArrayList;
@@ -26,10 +26,10 @@ public interface TelegramApiMethods {
     Observable<TelegramResponse<User>> getMe();
 
     @POST("sendmessage")
-    Observable<TelegramResponse<Message>> sendMessage(@NotNull @Body final SendMessageBody sendMessageBody);
+    Observable<TelegramResponse<Message>> sendMessage(@Body final @NotNull SendMessageBodyWithChatId sendMessageBody);
 
     @POST("forwardmessage")
-    Observable<TelegramResponse<Message>> forwardMessage(@NotNull @Body final SendMessageBody sendMessageBody);
+    Observable<TelegramResponse<Message>> forwardMessage(@Body final @NotNull SendMessageBodyWithChatId sendMessageBody);
 
 
 }

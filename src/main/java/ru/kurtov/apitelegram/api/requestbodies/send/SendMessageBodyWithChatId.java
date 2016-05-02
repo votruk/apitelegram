@@ -1,51 +1,47 @@
-package ru.kurtov.apitelegram.api.requestbodies;
+package ru.kurtov.apitelegram.api.requestbodies.send;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import ru.kurtov.apitelegram.api.models.keyboard.ReplyMarkup;
 import ru.kurtov.apitelegram.api.models.enums.ParseMode;
+import ru.kurtov.apitelegram.api.models.keyboard.ReplyMarkup;
+import ru.kurtov.apitelegram.api.requestbodies.base.BaseBodyWithChatId;
 
 import java.io.Serializable;
 
 /**
  * Created by KURT on 27.04.2016.
  */
-public class SendMessageBody implements Serializable {
+public class SendMessageBodyWithChatId extends BaseBodyWithChatId implements Serializable {
 
     private final static long serialVersionUID = 0L;
 
-    @JsonProperty("chat_id")
-    private String chatId;
+    @NotNull
     @JsonProperty("text")
-    private String text;
+    private final String text;
+    @Nullable
     @JsonProperty("parse_mode")
     private ParseMode parseMode;
+    @Nullable
     @JsonProperty("disable_web_page_preview")
     private Boolean disableWebPagePreview;
+    @Nullable
     @JsonProperty("disable_notification")
     private Boolean disableNotification;
-    @JsonProperty("reply_to_message_id")
-    private Integer reply_to_message_id;
+    @Nullable
+    @JsonProperty("replyToMessageId")
+    private Integer replyToMessageId;
+    @Nullable
     @JsonProperty("reply_markup")
     private ReplyMarkup replyMarkup;
-    //TODO add other fields
 
-
-    public SendMessageBody(@NotNull final String chatId,
-                           @NotNull final String text) {
-        this.chatId = chatId;
+    public SendMessageBodyWithChatId(@NotNull final String chatId, @NotNull final String text) {
+        super(chatId);
         this.text = text;
     }
 
-    public SendMessageBody(final int chatId,
-                           @NotNull final String text) {
+    public SendMessageBodyWithChatId(final int chatId, @NotNull final String text) {
         this(String.valueOf(chatId), text);
-    }
-
-    @NotNull
-    public String getChatId() {
-        return chatId;
     }
 
     @NotNull
@@ -69,8 +65,8 @@ public class SendMessageBody implements Serializable {
     }
 
     @Nullable
-    public Integer getReply_to_message_id() {
-        return reply_to_message_id;
+    public Integer getReplyToMessageId() {
+        return replyToMessageId;
     }
 
     @Nullable
@@ -78,23 +74,23 @@ public class SendMessageBody implements Serializable {
         return replyMarkup;
     }
 
-    public void setParseMode(ParseMode parseMode) {
+    public void setParseMode(@Nullable final ParseMode parseMode) {
         this.parseMode = parseMode;
     }
 
-    public void setDisableWebPagePreview(Boolean disableWebPagePreview) {
+    public void setDisableWebPagePreview(@Nullable final Boolean disableWebPagePreview) {
         this.disableWebPagePreview = disableWebPagePreview;
     }
 
-    public void setDisableNotification(Boolean disableNotification) {
+    public void setDisableNotification(@Nullable final Boolean disableNotification) {
         this.disableNotification = disableNotification;
     }
 
-    public void setReplyToMessageId(Integer reply_to_message_id) {
-        this.reply_to_message_id = reply_to_message_id;
+    public void setReplyToMessageId(@Nullable final Integer replyToMessageId) {
+        this.replyToMessageId = replyToMessageId;
     }
 
-    public void setReplyMarkup(ReplyMarkup replyMarkup) {
+    public void setReplyMarkup(@Nullable final ReplyMarkup replyMarkup) {
         this.replyMarkup = replyMarkup;
     }
 }

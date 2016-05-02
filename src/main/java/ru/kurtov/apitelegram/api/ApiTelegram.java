@@ -7,7 +7,7 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 import ru.kurtov.apitelegram.api.models.*;
-import ru.kurtov.apitelegram.api.requestbodies.SendMessageBody;
+import ru.kurtov.apitelegram.api.requestbodies.send.SendMessageBodyWithChatId;
 import rx.Observable;
 import rx.schedulers.Schedulers;
 import rx.subjects.PublishSubject;
@@ -51,7 +51,7 @@ public class ApiTelegram {
     }
 
     @NotNull
-    public Observable<Message> sendMessage(@NotNull final SendMessageBody sendMessageBody) {
+    public Observable<Message> sendMessage(final @NotNull SendMessageBodyWithChatId sendMessageBody) {
         return telegramApiMethods.sendMessage(sendMessageBody)
                 .map(TelegramResponse::getResult);
     }
