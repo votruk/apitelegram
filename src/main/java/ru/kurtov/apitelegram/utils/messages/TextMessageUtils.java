@@ -18,7 +18,8 @@ public final class TextMessageUtils {
         if (message.getText() == null) {
             throw new ShouldNotHappenedException("Cannot convert Message to TextMessage because text is null");
         }
-        return new TextMessage(message.getMessageId(), message.getDate(), message.getChat(), message.getFromUser(), message.getFromUser(), message.getForwardDate(), message.getReplyToMessage(), message.getText(), message.getEntities());
+        return new TextMessage(message.getMessageId(), message.getDate(), message.getChat(), message.getFromUser(), message.getFromUser(),
+                message.getForwardDate(), message.getReplyToMessage(), message.getText(), message.getEntities());
     }
 
     @NotNull

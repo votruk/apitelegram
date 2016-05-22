@@ -7,10 +7,27 @@
       <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okhttp3/okhttp/3.2.0/okhttp-3.2.0.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/com/squareup/okio/okio/1.6.0/okio-1.6.0.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.1.1/rxjava-1.1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/adapter-rxjava-2.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/retrofit-2.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/okhttp-3.2.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/okio-1.6.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/rxjava-1.1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/adapter-rxjava-2.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/retrofit-2.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/okhttp-3.2.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/okio-1.6.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/rxjava-1.1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/adapter-rxjava-2.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/retrofit-2.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/okhttp-3.2.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/okio-1.6.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/rxjava-1.1.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.ideaLibSources/rxjava-1.1.1-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/adapter-rxjava-2.0.2-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/adapter-rxjava-2.0.2-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/adapter-rxjava/2.0.2/adapter-rxjava-2.0.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -33,7 +33,7 @@ public class TelegramResponse<TObject extends Serializable> {
 
     @Nullable
     public TObject getResult() {
-        return result;
+         return result;
     }
 
 }

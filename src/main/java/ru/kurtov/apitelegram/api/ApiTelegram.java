@@ -9,9 +9,12 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 import ru.kurtov.apitelegram.api.models.*;
 import ru.kurtov.apitelegram.api.requestbodies.send.SendMessageBodyWithChatId;
 import rx.Observable;
+import rx.Subscription;
 import rx.schedulers.Schedulers;
+import rx.subjects.BehaviorSubject;
 import rx.subjects.PublishSubject;
 
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -21,13 +24,11 @@ public class ApiTelegram {
 
     private static final String BASE_URL = "https://api.telegram.org/bot";
     private static final long DELAY = TimeUnit.MILLISECONDS.toMillis(1000);
-    private PublishSubject<Message> messagesSubject = PublishSubject.create();
+    private BehaviorSubject<Message> messagesSubject = BehaviorSubject.create();
     private PublishSubject<InlineQuery> inlineQueriesSubject = PublishSubject.create();
     private PublishSubject<ChosenInlineResult> chosenInlineResultsSubject = PublishSubject.create();
     private PublishSubject<CallbackQuery> callbackQueriesSubject = PublishSubject.create();
     private int lastUpdatedId;
-
-    private boolean isOpened = true;
 
     @NotNull
     private final TelegramApiMethods telegramApiMethods;
@@ -42,12 +43,33 @@ public class ApiTelegram {
                 .addConverterFactory(JacksonConverterFactory.create(mapper))
                 .build();
         telegramApiMethods = mainEndpoint.create(TelegramApiMethods.class);
-        final Thread thread = new Thread(new ReaderThread());
-        thread.start();
+
+        final CountDownLatch countDownLatch = new CountDownLatch(Integer.MAX_VALUE);
+        observeIncomingMessages(countDownLatch);
+
     }
 
-    public void setOpened(boolean opened) {
-        isOpened = opened;
+    private void observeIncomingMessages(final CountDownLatch countDownLatch) {
+        Observable
+                .interval(DELAY, TimeUnit.MILLISECONDS)
+                .subscribe(counter ->
+                        telegramApiMethods.getUpdates(lastUpdatedId + 1)
+                                .map(TelegramResponse::getResult)
+                                .subscribe(updates -> {
+                                    lastUpdatedId = 0;
+                                    for (final Update update : updates) {
+                                        updateSubject(update);
+                                        if (update.getUpdateId() > lastUpdatedId) {
+                                            lastUpdatedId = update.getUpdateId();
+                                        }
+                                    }
+                                    countDownLatch.countDown();
+                                }));
+        try {
+            countDownLatch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @NotNull
@@ -59,6 +81,12 @@ public class ApiTelegram {
     @NotNull
     public Observable<Message> observeMessages() {
         return messagesSubject;
+    }
+
+    public Subscription subscription() {
+        return messagesSubject.subscribe(message -> {
+            System.out.println(message.getChat().getFirstName() + " " + message.getChat().getLastName());
+        });
     }
 
     @NotNull
@@ -76,33 +104,7 @@ public class ApiTelegram {
         return callbackQueriesSubject;
     }
 
-    private class ReaderThread implements Runnable {
-
-        @Override
-        public void run() {
-            while (isOpened) {
-                try {
-                    Thread.sleep(DELAY);
-                    telegramApiMethods.getUpdates(lastUpdatedId + 1)
-                            .map(TelegramResponse::getResult)
-                            .subscribe(updates -> {
-                                lastUpdatedId = 0;
-                                for (final Update update : updates) {
-                                    updateSubject(update);
-                                    if (update.getUpdateId() > lastUpdatedId) {
-                                        lastUpdatedId = update.getUpdateId();
-                                    }
-                                }
-                            });
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-
-        }
-    }
-
-    private void updateSubject(Update update) {
+    private void updateSubject(@NotNull final Update update) {
         switch (update.getUpdateType()) {
             case INLINE_QUERY:
                 inlineQueriesSubject.onNext(update.getInlineQuery());
